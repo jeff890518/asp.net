@@ -1,0 +1,359 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>歡迎來到 Steam</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .float-top{
+            float:none;
+        }
+        .float-right {
+            float:right;
+        }
+        .auto-style12 {
+            background-color: #1A4662;
+            height:14px;
+        }
+        .auto-style13 {
+            width: 240px;
+        }
+        .auto-style14 {
+            width: 680px;
+            height: 540px;
+        }
+        .auto-style15 {
+            width: 630px;
+            background-color: #377197;
+            height: 3px;
+        }
+        .auto-style18 {
+            width: 240px;
+            height: 150px;
+            background-color: #171A21;
+        }
+        .header {
+           background-color: #171A21;
+        }
+        .body{
+           background-color: #377197;
+        }
+        .auto-style20 {
+            margin-left: 63px;
+            margin-right: 0;
+            margin-top: 0;
+        }
+        .auto-style21 {
+            margin-left: 64px;
+            margin-right: 0;
+            margin-top: 0;
+        }
+        .auto-style23 {
+            width: 501px;
+            background-color: #377197;
+            height: 3px;
+        }
+        .auto-style24 {
+            background-color: #171A21;
+            width: 670px;
+        }
+        .align{
+            align-items:center;
+            align-self:center;
+            align-content:center;
+        }
+        .auto-style26 {
+            margin-left: 337px;
+        }
+        .auto-style27 {
+            width: 1895px;
+            height: 195px;
+        }
+        .auto-style28 {
+            background-color: #1A4662;
+            height: 14px;
+            width: 680px;
+        }
+        .auto-style29 {
+            width: 34px;
+        }
+        .auto-style30 {
+            width: 680px;
+            background-color: #377197;
+            height: 3px;
+        }
+        </style>
+</head>
+
+
+
+<body style="width: 1920px; height: 1080px; background-color: #171A21; vertical-align: auto;">
+    
+    <form id="form1" style="background-color: #1A4662" class="body" runat="server" >
+    <div style="background-color:#1A4662;position:center;">
+        
+            
+            <table class="auto-style12">
+        <tr>
+            <td class="header" colspan="3">
+        <table  class="header">
+        <tr>
+            <td class="header">
+            <div style="background-color: #171A21" >
+                &nbsp;<asp:ImageButton ID="ImageButton4" runat="server" CssClass="auto-style26" ImageUrl="~/images/headersmall.png" PostBackUrl="~/shop.aspx" />
+            </div>
+            </td>
+            <td class="auto-style24">
+                    <asp:Menu ID="Menu2" runat="server" BackColor="#171A21" Font-Names="Verdana" Font-Size="1.1em" ForeColor="White" StaticSubMenuIndent="10px" Orientation="Horizontal" BorderColor="#1A4662">
+                        <DynamicHoverStyle BackColor="#171A21" ForeColor="White" />
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <DynamicMenuStyle BackColor="#171A21" />
+                        <DynamicSelectedStyle BackColor="#171A21" />
+                        <Items>
+                            <asp:MenuItem Text="商店" Value="商店" >
+                                
+                                <asp:MenuItem Text="精選" Value="精選"></asp:MenuItem>
+                                <asp:MenuItem Text="願望清單" Value="願望清單"></asp:MenuItem>
+                                <asp:MenuItem Text="新聞" Value="新聞"></asp:MenuItem>
+                                <asp:MenuItem Text="統計資料" Value="統計資料"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="社群" Value="社群">
+                                <asp:MenuItem Text="首頁" Value="首頁"></asp:MenuItem>
+                                <asp:MenuItem Text="討論區" Value="討論區"></asp:MenuItem>
+                                <asp:MenuItem Text="工作坊" Value="工作坊"></asp:MenuItem>
+                                <asp:MenuItem Text="市集" Value="市集"></asp:MenuItem>
+                                <asp:MenuItem Text="實況直播" Value="實況直播"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="關於" Value="關於">
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="客服中心" Value="客服中心">
+                            </asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle BackColor="#171A21" ForeColor="White" />
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" ForeColor="#c0c0c0" />
+                        <StaticSelectedStyle BackColor="#171A21" />
+                        <dynamicmenuitemstyle backcolor="#171A21" forecolor="#c0c0c0"/>
+                        <dynamichoverstyle backcolor="#171A21" forecolor="White"/>
+                    </asp:Menu>
+            </td>
+            <td class="header">
+                    
+                    <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/images/install_bu.png" />
+            </td>
+            <td class="header">
+                    
+                    <asp:Label ID="Label2" runat="server" Text="嗨！" ForeColor="White" Font-Size="24px"></asp:Label>
+                    
+                    <asp:Label ID="Label1" runat="server" Text="Label" ForeColor="White" Font-Size="24px"></asp:Label>
+                    <br />
+            </td>
+            <td class="header">
+                    
+            </td>
+        </tr>
+                
+    </table>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3" style="background-color: #1A4662" title="歡迎來到 Steam" class="auto-style29">
+                    <img alt="" class="auto-style20" src="images/giftcard.png"  />
+                <asp:TreeView ID="TreeView1" HoverNodeStyle-ForeColor="White" Font-Size="1em" runat="server" ForeColor="#33CCFF" Height="503px" Width="106px" CssClass="auto-style21">
+                        <Nodes>
+                            <asp:TreeNode Text="禮物卡" Value="禮物卡">
+                                <asp:TreeNode Text="已上市" Value="已上市"></asp:TreeNode>
+                            </asp:TreeNode>
+                            <asp:TreeNode Text="推薦" Value="推薦">
+                                <asp:TreeNode Text="好友" Value="好友"></asp:TreeNode>
+                                <asp:TreeNode Text="鑑賞家" Value="鑑賞家"></asp:TreeNode>
+                                <asp:TreeNode Text="標籤" Value="標籤"></asp:TreeNode>
+                            </asp:TreeNode>
+                            <asp:TreeNode Text="探索佇列" Value="探索佇列">
+                                <asp:TreeNode Text="推薦商品" Value="推薦商品"></asp:TreeNode>
+                                <asp:TreeNode Text="新推出" Value="新推出"></asp:TreeNode>
+                            </asp:TreeNode>
+                            <asp:TreeNode Text="瀏覽分類" Value="瀏覽分類">
+                                <asp:TreeNode Text="暢銷商品" Value="暢銷商品"></asp:TreeNode>
+                                <asp:TreeNode Text="最近推出" Value="最近推出"></asp:TreeNode>
+                                <asp:TreeNode Text="新推出" Value="新推出"></asp:TreeNode>
+                                <asp:TreeNode Text="即將發行" Value="即將發行"></asp:TreeNode>
+                                <asp:TreeNode Text="特惠" Value="特惠"></asp:TreeNode>
+                                <asp:TreeNode Text="虛擬實境" Value="虛擬實境"></asp:TreeNode>
+                                <asp:TreeNode Text="支援控制器" Value="支援控制器"></asp:TreeNode>
+                            </asp:TreeNode>
+                            <asp:TreeNode Text="依類型瀏覽" Value="依類型瀏覽">
+                                <asp:TreeNode Text="免費遊玩" Value="免費遊玩"></asp:TreeNode>
+                                <asp:TreeNode Text="搶先體驗" Value="搶先體驗"></asp:TreeNode>
+                                <asp:TreeNode Text="休閒" Value="休閒"></asp:TreeNode>
+                                <asp:TreeNode Text="冒險" Value="冒險"></asp:TreeNode>
+                                <asp:TreeNode Text="動作" Value="動作"></asp:TreeNode>
+                                <asp:TreeNode Text="大型多人連線" Value="大型多人連線"></asp:TreeNode>
+                                <asp:TreeNode Text="模擬" Value="模擬"></asp:TreeNode>
+                                <asp:TreeNode Text="獨立" Value="獨立"></asp:TreeNode>
+                                <asp:TreeNode Text="競速" Value="競速"></asp:TreeNode>
+                                <asp:TreeNode Text="策略" Value="策略"></asp:TreeNode>
+                                <asp:TreeNode Text="角色扮演" Value="角色扮演"></asp:TreeNode>
+                                <asp:TreeNode Text="運動" Value="運動"></asp:TreeNode>
+                            </asp:TreeNode>
+                            <asp:TreeNode Text="您的標籤" Value="您的標籤"></asp:TreeNode>
+                            <asp:TreeNode Text="近期檢視" Value="近期檢視"></asp:TreeNode>
+                        </Nodes>
+                    </asp:TreeView>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+            </td>
+            <td class="auto-style28">
+                
+                <div style="float:right;">
+                    <asp:Menu ID="Menu6" class="float-right" runat="server" BackColor="#377197" Font-Names="Verdana" Font-Size="0.9em" ForeColor="White" StaticSubMenuIndent="10px" Orientation="Horizontal" BorderColor="#1A4662" OnMenuItemClick="Menu6_MenuItemClick">
+                        <DynamicHoverStyle BackColor="#377197" ForeColor="White" />
+                        <DynamicMenuItemStyle HorizontalPadding="10px" VerticalPadding="2px" />
+                        <DynamicMenuStyle BackColor="#377197" />
+                        <DynamicSelectedStyle BackColor="#377197" />
+                        <Items>
+                            <asp:MenuItem Text="購物車" Value="購物車" NavigateUrl="~/purchaseCar.aspx">
+                            </asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle BackColor="#89ad04" ForeColor="#000000"  />
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" ForeColor="#a0cc06" BackColor="#6c8800" />
+                        <StaticSelectedStyle BackColor="#dfe7ed" />
+                        <dynamicmenuitemstyle backcolor="#dfe7ed" forecolor="000000"/>
+                        <dynamichoverstyle backcolor="#89ad04" forecolor="White" />
+                    </asp:Menu>
+                    
+                    <asp:Menu ID="Menu5" class="float-right" runat="server" BackColor="#377197" Font-Names="Verdana" Font-Size="0.9em" ForeColor="White" StaticSubMenuIndent="10px" Orientation="Horizontal" BorderColor="#1A4662">
+                        <DynamicHoverStyle BackColor="#377197" ForeColor="White" />
+                        <DynamicMenuItemStyle HorizontalPadding="10px" VerticalPadding="2px" />
+                        <DynamicMenuStyle BackColor="#377197" />
+                        <DynamicSelectedStyle BackColor="#377197" />
+                        <Items>
+                            <asp:MenuItem Text="願望清單" Value="願望清單">
+                            </asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle BackColor="#dfe7ed" ForeColor="#000000" />
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" ForeColor="White" />
+                        <StaticSelectedStyle BackColor="#dfe7ed" />
+                        <dynamicmenuitemstyle backcolor="#dfe7ed" forecolor="000000"/>
+                        <dynamichoverstyle backcolor="#171A21" forecolor="White"/>
+                    </asp:Menu></div>
+
+                
+                    
+                </td>
+            <td class="auto-style13" rowspan="3"></td>
+        </tr>
+        <tr>
+            <td class="auto-style30">
+        <table  class="body">
+        <tr>
+            <td class="auto-style23">
+                    <asp:Menu ID="Menu4" StaticPopOutImageUrl="~/images/dotri.png"  runat="server" BackColor="#377197" Font-Names="Verdana" Font-Size="1.1em" ForeColor="White" StaticSubMenuIndent="10px" Orientation="Horizontal" BorderColor="#1A4662">
+                        <DynamicHoverStyle BackColor="#377197" ForeColor="White" />
+                        <DynamicMenuItemStyle HorizontalPadding="10px" VerticalPadding="2px"  />
+                        <DynamicMenuStyle BackColor="#377197" />
+                        <DynamicSelectedStyle BackColor="#377197" />
+                        <Items>
+                            <asp:MenuItem   Text="您的商店" Value="您的商店" >
+                                <asp:MenuItem Text="首頁" Value="  首頁"></asp:MenuItem>
+                                <asp:MenuItem Text="偏好設定" Value="  偏好設定"></asp:MenuItem>
+                                <asp:MenuItem Text="互動式專員" Value="互動式專員"></asp:MenuItem>
+                                <asp:MenuItem Text="探索佇列" Value="探索佇列"></asp:MenuItem>
+                                <asp:MenuItem Text="好友間熱門" Value="好友間熱門"></asp:MenuItem>
+                                <asp:MenuItem Text="Steam鑑賞家" Value="Steam鑑賞家"></asp:MenuItem>
+                                <asp:MenuItem Text="最近更新" Value="最近更新"></asp:MenuItem>
+                                <asp:MenuItem Text="已關注的遊戲與軟體" Value="已關注的遊戲與軟體"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="&nbsp;遊戲" Value="遊戲">
+                                <asp:MenuItem Text="免費遊玩" Value="免費遊玩"></asp:MenuItem>
+                                <asp:MenuItem Text="搶先體驗" Value="搶先體驗"></asp:MenuItem>
+                                <asp:MenuItem Text="試玩版" Value="試玩版"></asp:MenuItem>
+                                <asp:MenuItem Text="虛擬實境" Value="虛擬實境"></asp:MenuItem>
+                                <asp:MenuItem Text="支援Steam控制器" Value="支援Steam控制器"></asp:MenuItem>
+                                <asp:MenuItem Text="Steam上的網咖電腦遊戲" Value="Steam上的網咖電腦遊戲"></asp:MenuItem>
+                                <asp:MenuItem Text="遠端暢玩" Value="遠端暢玩"></asp:MenuItem>
+                                <asp:MenuItem Text="Mac OS X" Value="Mac OS X"></asp:MenuItem>
+                                <asp:MenuItem Text="SteamOS + Linux" Value="SteamOS + Linux"></asp:MenuItem>
+                                <asp:MenuItem Text="原聲帶" Value="原聲帶"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="&nbsp;軟體" Value="軟體">
+                                <asp:MenuItem Text="軟體中心" Value="軟體中心"></asp:MenuItem>
+                                <asp:MenuItem Text="動畫與模型製作" Value="動畫與模型製作"></asp:MenuItem>
+                                <asp:MenuItem Text="圖片編輯" Value="圖片編輯"></asp:MenuItem>
+                                <asp:MenuItem Text="工具" Value="工具"></asp:MenuItem>
+                                <asp:MenuItem Text="影像製作" Value="影像製作"></asp:MenuItem>
+                                <asp:MenuItem Text="教育學習" Value="教育學習"></asp:MenuItem>
+                                <asp:MenuItem Text="網頁出版" Value="網頁出版"></asp:MenuItem>
+                                <asp:MenuItem Text="設計與繪圖" Value="設計與繪圖"></asp:MenuItem>
+                                <asp:MenuItem Text="遊戲開發" Value="遊戲開發"></asp:MenuItem>
+                                <asp:MenuItem Text="錄音" Value="錄音"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="&emsp;硬體" Value="硬體">
+                                <asp:MenuItem Text="Valve Index" Value="Valve Index"></asp:MenuItem>
+                                <asp:MenuItem Text="Steam 控制器" Value="Steam 控制器"></asp:MenuItem>
+                                <asp:MenuItem Text="HTC Vive" Value="HTC Vive"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="&emsp;新聞" Value="新聞"></asp:MenuItem>
+                            <asp:MenuItem Text="&emsp;Steam實驗室" Value="Steam實驗室"></asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle BackColor="#dfe7ed" ForeColor="#000000" />
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" ForeColor="White" />
+                        <StaticSelectedStyle BackColor="#dfe7ed" />
+                        <dynamicmenuitemstyle backcolor="#dfe7ed" forecolor="000000"/>
+                        <dynamichoverstyle backcolor="#171A21" forecolor="White"/>
+                    </asp:Menu>
+                </td>
+            <td class="auto-style15">
+                <asp:ImageButton ID="ImageButton3" runat="server" ImageUrl="~/images/search.png" class="float-right" />    
+                <asp:TextBox ID="TextBox2" runat="server" BackColor="#316282" Height="26px" Width="192px" class="float-right" Font-Italic="true" ForeColor="#333333">搜尋商店</asp:TextBox>
+                    
+                </td>
+        </tr>
+        
+    </table>
+        
+                </td>
+        </tr>
+        <tr>
+            <td class="auto-style14">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                    </asp:ContentPlaceHolder>
+                </td>
+        </tr>
+        <tr>
+            <td class="auto-style18" colspan="3">
+                <img alt="" class="auto-style27" src="images/foot.png" /></td>
+        </tr>
+        
+    </table>
+        </div>
+        
+        
+        
+    
+    
+    </form>
+        
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    </body>
+</html>
